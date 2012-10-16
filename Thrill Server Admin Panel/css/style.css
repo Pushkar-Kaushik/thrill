@@ -1,0 +1,325 @@
+/*****************************************************************************
+*  Copyright Statement:
+*  --------------------
+*  This software is protected by Copyright and the information contained
+*  herein is confidential. The software may not be copied and the information
+*  contained herein may not be used or disclosed except with the written
+*  permission of MoMagic Technologies Pvt Ltd.
+*
+*  BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+*  THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MOMAGIC TECHNOLOGIES SOFTWARE")
+*  RECEIVED FROM MOMAGIC TECHNOLOGIES AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+*  AN "AS-IS" BASIS ONLY. MOMAGIC TECHNOLOGIES EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+*  NEITHER DOES MOMAGIC TECHNOLOGIES PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+*  SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+*  SUPPLIED WITH THE MOMAGIC TECHNOLOGIES SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+*  THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MOMAGIC TECHNOLOGIES SHALL ALSO
+*  NOT BE RESPONSIBLE FOR ANY MOMAGIC TECHNOLOGIES SOFTWARE RELEASES MADE TO BUYER'S
+*  SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+*
+*  BUYER'S SOLE AND EXCLUSIVE REMEDY AND MOMAGIC'S ENTIRE AND CUMULATIVE
+*  LIABILITY WITH RESPECT TO THE MOMAGIC TECHNOLOGIES SOFTWARE RELEASED HEREUNDER WILL BE,
+*  AT MOMAGIC'S OPTION, TO REVISE OR REPLACE THE MOMAGIC TECHNOLOGIES SOFTWARE AT ISSUE,
+*  OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+*  MOMAGIC TECHNOLOGIES FOR SUCH MOMAGIC TECHNOLOGIES SOFTWARE AT ISSUE.
+*
+*  THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+*  WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+*  LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+*  RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+*  THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+*
+*****************************************************************************/
+ 
+/*****************************************************************************
+ *
+ * Filename:
+ * ---------
+ * style.css
+ *
+ * Project:
+ * --------
+ * Thrill
+ *
+ * Description:
+ * ------------
+ * Contains the various styling rules for various pages and their elements
+ *
+ * Author:
+ * -------
+ * -------
+ *
+ ****************************************************************************/
+ 
+
+
+
+
+
+
+
+
+*{outline:none;}
+body{ margin:0px; padding:0px; background:#F5F8FE; font:normal 12px Verdana, Tahoma, Helvetica, Arial;}
+h1, h2, h3, p, form, input, ul, li{ margin:0px; padding:0px;}
+ul, li{ list-style:none;}
+h1{font-weight:bold; color:#0083C8; font-size:12px; line-height:30px;}
+.cl{ clear:both;}
+.fl{ float:left; margin:0px; padding:0px;}
+.fr{ float:right; margin:0px; padding:0px;}
+.v-middle{ vertical-align:middle;}
+.pad_left_20{ padding-left:20px;}
+img{ border:none;}
+.red{ font-family: Verdana, Helvetica, MS Sans Serif; font-size:11px; font-weight: normal; text-align:;color:#FF0000;}
+
+.wrapper{width:960px; margin:0px 0px 0px 10px; padding:10px 0 0px 0; float:left;}
+.logo{ font: normal 36px "Times New Roman", Times, serif; color:#0083C8; float:left;}
+.top-right{font: normal 11px Arial, Helvetica, sans-serif; color:#2E2E2E; float:right; padding:20px 5px 0 0px;}
+.top-right span{ margin:0 3px;}
+.top-right a{ color:#0083C8; text-decoration:none;}
+
+.container{ margin:0 0px; padding:5px 0 0 0px; width:960px;}
+.cont-left{ float:left; width:231px; margin:0 0px; color:#454545;}
+.cont-left-midd{ background:#FFFFFF; width:231px; float:left; border:solid 1px #C4C4C4; border-right:solid 1px #C4C4C4; padding:5px 10px 10px 10px; min-height:450px;}
+
+.cont-left ul{ margin:0px;}
+.cont-left ul li{ display:block; font-size:11px; line-height:22px; border-bottom:solid 1px #C9C9C9; padding:3px 0 0 0px; color:#000000; font-weight:bold;}
+.cont-left ul li span{ margin:5px 0px 0 0px; vertical-align:middle; width:22px; float:left;}
+.cont-left ul li a{ color:#555555; text-decoration:none; }
+.cont-left ul li a:hover{ color: #FF6600 ; text-decoration:none; }
+
+.cont-right{width:700px; margin:0 0px 10px 0px; float:right;background:#FFFFFF;}
+.cont-right-midd{background:#F5F8FE; float:left; width:800px;  padding:5px 5px 5px 5px;}
+
+/*login cont*/
+
+.cont-login{width:589px; margin:10px 200px 10px 110px; float:right;}
+
+.search-box{width: auto; padding:0 0 0 0; float:left;}
+.search-box a{ text-decoration:none; color:#fff;}
+.serch-input{width:106px; height:14px; margin:0 0px 0 0px; border:none; font:normal 11px Arial, Helvetica, sans-serif; padding:2px 10px 0px 10px; float:left; }
+.submit{width:24px; height:17px; margin:0px 0px 0 5px; background:url(../images/submit.jpg) left top no-repeat; border:none; cursor:pointer; color:#FFFFFF; float:left; }
+.add{ vertical-align:middle; margin:-2px 5px 0 0px; padding:0px;}
+
+
+.green-box{margin:10px 0px; width:539px; float:left; clear:both;}
+.green-box-mid{ background:#79BB16; width:525px; float:left; padding:0 7px; }
+.green-box-mid h1{ font:bold 16px Arial, Helvetica, sans-serif; color:#FFFFFF; float:left;}
+.green-box-mid h2{ font:bold 11px Arial, Helvetica, sans-serif; color:#FFFFFF; float:right; padding:5px 0 0 0px;}
+.green-box-mid h2 a:link, .green-box-mid h2 a:visited{color:#FFFFFF; text-decoration:none;}
+.green-box-mid h2 a:hover, .green-box-mid h2 a:active {color:#FFFFFF; text-decoration:none;}
+.green-box-mid h2 img{ float:left; margin:0 7px 0 0px;}
+
+.white-box{margin:8px 0px; float:left;  }
+.white-box-mid{background:#fff; width:490px; float:left; padding:13px 17px 13px 17px; position:relative; height:60px;}
+.white-box-mid .arrow-left{ width:25px; float:left; padding:25px 0 0 0px;}
+.white-box-mid .arrow-right{ width:10px; float:left; padding:25px 0 0 15px;}
+.white-box-mid .img-box{ float:left;}
+.white-box-mid .img-box img{ float:left; padding:2px; margin-right:8px; border:solid 0px #DDDDDD;}
+
+.pagination{ margin:15px 25px 0 0; padding:0px; float:right; height:20px; }
+.pagination ul{ margin:0px; padding:0px;}
+.pagination ul .arrow-l{ float:left; padding:2px 0px 0 0; border:none;}
+.pagination ul .arrow-r{ float:left; padding:2px 0px 0 8px; border:none;}
+.pagination ul .arrow-r a{ border:none; float:left;}
+.pagination ul li{font-size:12px; float:left; margin-right:2px; clear:none; border:none; padding:0px; color:#1B8ABF; line-height:17px; width:17px; text-align:center;}
+.pagination ul li a{border:solid 1px #DDDDDD; padding:0px 0 0 0; display:block; color:#1B8ABF; }
+.pagination ul li.none a{border:none; padding:0px 0 0 0; display:block; color:#1B8ABF;}
+
+/*paging class start*/
+.smalla1 {border:solid 1px #CCCCCC; margin:0px 0px 0px 0px; padding:2px 2px 2px 2px; background: #666666; color:#fff; font-weight:bold; text-decoration:none;}
+.normaltextnotbold {border:solid 1px #CCCCCC; margin:0px 0px 0px 0px;padding:2px 2px 2px 2px; background:#EDEDE9; color:#666666; font-weight:bold; text-decoration:none;}
+/*paging class end*/
+
+.footer{ float:left; width:800px; margin:2px 0 3px 0px; font:normal 11px/18px Arial, Helvetica, sans-serif; color:#6E6E6E;}  
+.footer-mid{width:778px; float:left; border-left:solid 1px #ABCCF0; border-right:solid 1px #ABCCF0; padding:0 10px; background:#FFFFFF;}
+.footer-mid .left{ float:left; width:150px;} 
+.footer-mid .right{ float:right; width:250px; padding:10px 0 0 0px;}  
+
+/* Scriller Css*/
+#scrollbar2 {display:none;}
+#wn2{position: absolute; left:10px; margin:0 0 0 35px; width:500px; height:61px; overflow:hidden;}
+#scrollbar2 {position: absolute; top:35px; padding:0 0 0 0px; width:470px; height:11px; display:block; font-size:1px;}
+#scrollbar2 a{ border:none;}
+
+#track2 {}
+#dragBar2 {}  
+#left { position:absolute; left:0; top:0; }  
+#right { position:absolute; right:0; top:0;}
+#scrollbar2, #track2, #dragBar2, #left, #right { -moz-user-select: none; -khtml-user-select: none;}
+#scrollbar2 img {display:block;} 
+
+/************* Theme Css***********/
+.theme-box{margin:20px 0px 0 30px; float:left;}
+.theme-numb{background:#3F89C3; margin:5px 0 0 0px; display:block; color:#FFFFFF; line-height:22px; text-align:center;}
+.theme-numb a{color:#FFFFFF; text-decoration:none;}
+.theme-numb a:hover{color:#FFFFFF; text-decoration:underline;}
+
+
+/**************Heading Rounded*****************/
+.b1h, .b2h, .b3h, .b4h, .b2bh, .b3bh, .b4bh {display:block; font-size:1px; overflow:hidden;}
+
+.b1h {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#696969 none repeat scroll 0 0; height:1px; margin:0 5px;}
+
+.b2h, .b2bh {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#696969 none repeat scroll 0 0;
+border-left:2px solid #696969;
+border-right:2px solid #696969;
+height:1px;
+margin:0 3px;
+}
+.b3h, .b3bh {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#696969 none repeat scroll 0 0;
+border-left:1px solid #696969;
+border-right:1px solid #696969;
+height:1px;
+margin:0 2px;
+}
+.b4h, .b4bh {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#696969 none repeat scroll 0 0;
+border-left:1px solid #696969;
+border-right:1px solid #696969;
+height:2px;
+margin:0 1px;
+}
+.b2bh, .b3bh, .b4bh {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#696969 none repeat scroll 0 0;
+}
+.heading-middle-box{background:#2B569B; display:block; font:bold 12px/18px Verdana, Tahoma, Helvetica, Arial; color:#FFFFFF; padding:0 0 0 10px;}
+.heading-middle-box h2{ font:bold 12px/18px Verdana, Tahoma, Helvetica, Arial; color:#FFFFFF; width:auto; padding:0 0px 0 0px; float:left;min-width:300px;}
+
+/**************Heading managment Page*****************/
+.select-theme{width:568px; position:relative;}
+.select-theme-inner{height:88px; width:505px; border-top:solid 1px #C4C4C4; border-bottom:solid 1px #C4C4C4; background:#F9F9F9; float:left; padding:13px 0 0 0px;}
+.select-theme-inner ul{ margin:0px;}
+.select-theme-inner ul li{ padding:0px 11px 0 11px; float:left;}
+.display-banner{left top no-repeat; border:solid 1px #C4C4C4; padding:3px;}
+.display-banner-image{ background:url(../images/edit-banner.jpg) left top repeat-x; width:559px; height:76px; paddind:10px 0 0 10px;}
+.create-banner{left top no-repeat; border:solid 1px #C4C4C4; padding:3px;}
+.create-banner label{ width:130px; float:left; color:#707070; padding:15px 0 0 10px;}
+.create-banner .input{ width:400px; float:left; border:solid 1px #C3C3C3; border-top:solid 1px #7C7C7C; border-bottom: solid 1px #DDDDDD; padding:8px 7px 8px 7px; font:normal 16px Arial, Helvetica, sans-serif; color:#000000; margin:5px 0 5px 0px;}
+.banner-fck-box{ width:560px; height:47px; background:#F0F0EE;}
+
+.save-orange{padding:5px 13px; font-weight:bold; float:right; background:#FF6600; color:#FFFFFF; margin:10px 0px; clear:both; border:none;}
+.save-orange a{color:#FFFFFF; text-decoration:none;}
+.save-orange2{padding:5px 13px; font-weight:bold; float:left; background:#FF6600; color:#FFFFFF; margin:40px 0 10px 0px; clear:both; border:none;}
+.save-orange2 a{padding:5px 13px; font-weight:bold; float:right; background:#FF6600; color:#FFFFFF; margin:10px 0px; clear:both; border:none;}
+.listing{min-height:428px; height:auto;}
+.listing .main-li{display:block;padding:5px; color:#555555; clear:both; line-height:22px; font-size:11px;}
+.listing .main-li.none{border-bottom: none;}
+.listing .active{background:#F9F9F9;}
+.listing .main-li a{color:#555555; text-decoration:none;}
+.listing .span1{width:120px; float:left; margin:0 15px 0 0px;}
+.listing .span2{width:100px; float:left; margin:0 15px 0 0px;}
+.listing .span100{width:130px; float:left; margin:0 15px 0 0px;}
+.listing .span4{width:80px; float:left; margin:0 0px 0 0px; text-align:left;}
+.listing .span3{width:115px; float:right; font-size:11px; color:#000; text-align:center;}
+.listing .span3 img{ margin:0 5px 0 0px;}
+.listing .header-span1{width:140px; float:left; margin:0 15px 0 0px; padding:5px 0 5px 0px;} 
+
+.listing .span3 a{color:#000; text-decoration:none;}
+.listing b{ font-weight:bold; color:#3D3C3C;}
+.date{ font:normal 12px/18px Arial, Helvetica, sans-serif; color:#707070;}
+.blue-title{font:bold 14px/18px Arial, Helvetica, sans-serif; color:#0083C8;}
+.listing .span3 .edit{padding:0px 5px 1px 5px; float:right; background:#FF6600; color:#FFFFFF; margin:2px 0px 0 3px; line-height:16px;}
+.listing .span3 .edit a{color:#FFFFFF; text-decoration:none;}
+.listing .title{ width:190px; float:left; text-align: justify;}
+.listing .listdesc{ width:380px; float:left; display:block;}
+.listing .input{ width:350px; margin:0 0 10px 0px; border:solid 1px #CCCCCC;}
+.listing .textarea{ width:350px; margin:0 0 10px 0px; border:solid 1px #CCCCCC;}
+
+.heading-logo{ font: normal 50px "Times New Roman", Times, serif; color:#FFFFFF; float:left; padding:15px 0 0 20px;} 
+.heading-logo span{ color:#D6E7F6; font:normal 18px Arial, Helvetica, sans-serif; margin:0 0 0 5px;}
+
+/*login page css*/
+.login{background:url(../images/login-bg.gif) left top no-repeat; width:436px;margin:0px auto 0 auto; padding:5px 5px; font:normal 12px/25px Arial, Helvetica, sans-serif; color:#686868;}
+.login .top-sapr{ border-bottom:solid 1px #e5e5e5; display:block; margin:0 0 18px 0px;}
+.login .midd{ margin:0px;}
+.login .left{ width:134px; float:left;}
+.login .right{ width:300px; float:left; padding:18px 0 0 0px;}
+.login .right label{ width:100px; float:left; font:bold 14px Verdana, Arial, Helvetica, sans-serif; color:#1c67ac; padding:0 0 0 20px;}
+.login .right .input{ width:173px; height:19px; float:left; border:solid 1px #a9cbf0; font:normal 11px Verdana, Arial, Helvetica, sans-serif; color:#1c67ac; padding:3px 0 0 5px; margin:0 0 11px 0px;}
+.login .bott{ font:normal 11px Arial, Helvetica, sans-serif; color:#333333; padding:20px 0 0 0px;}
+
+.login .green-link{ font:bold 11px Arial, Helvetica, sans-serif; color:#669966;}
+.login .green-link a{ text-decoration:underline; color:#669966;}
+.login .green-link a:hover{text-decoration:none; color:#669966;}
+
+/**/
+.cont-right .main-li{display:block; border-bottom:none; padding:3px 0 3px 15px; color:#555555; clear:both; line-height:17px;font:Verdana, Arial, Helvetica, sans-serif;}
+.cont-right .main-li.none{  border-bottom: none; }
+.cont-right .main-li.active{ background: #F4F4F4; color:#000000;}
+.cont-right .main-li a{ color:#555555; text-decoration:none; }
+
+
+
+
+
+
+/* CSS Edited by Pragyat Srivastava */
+
+/*********Formating of all pages**************/
+.div-cont-rignt{min-height:428px; height:auto}
+.back-box {color:#000000; font-size:11px; padding:5px 0 8px 15px; width:50px; background:url(../images/back-icon.gif) left 5px no-repeat; float:right; margin:0 0px 0 0px; line-height:22px;}
+.check-aval{ background:#339900; border:solid 1px #266009; color:#fff; padding:0 3px; height:18px; font:normal 11px/18px Arial, Helvetica, sans-serif; margin:3px 10px; cursor:pointer;}
+.inputbox{width:200px; height:18px; margin:3px 0px; border: solid 1px #e0e0e0; font:normal 11px Arial, Helvetica, sans-serif; padding:0px 5px;}
+.smallinputbox{width:20px; height:18px; margin:3px 0px; border: solid 1px #e0e0e0; font:normal 11px Arial, Helvetica, sans-serif; padding:0px 5px;}
+.inputbox_small{width:50px; height:18px; margin:3px 0px; border: solid 1px #e0e0e0; font:normal 11px Arial, Helvetica, sans-serif; padding:0px 5px;}
+.selectbox{width:213px; height:18px; margin:3px 0px; border: solid 1px #e0e0e0; font:normal 11px Arial, Helvetica, sans-serif; padding:0px 0px;}
+.xlink {cursor:pointer}
+.hlink{cursor:help}
+
+.select-cat{padding:10px 0 10px 0px;}
+.select-cat .heading{float:left; margin:0 10px 0 10px; font:bold 11px/22px Arial, Helvetica, sans-serif; color:#555555;}
+.select-cat .input-cat{float:left; margin:0 10px 0 0px;}
+
+/****************************** Left Menu start ************************************************/
+.menu_list {width:231px;}
+.menu_head {margin:0px;padding:5px 0px 0px 36px;line-height:22px;height:27px;color:#000;font-family:Arial;font-size:12px;cursor: pointer;position: relative;background:url(../images/gelbuttoncenter4.gif) center right repeat;}
+.menu_body {display:none;background-color:#FFFFFF;}
+.menu_body a{display:block;color:#006699;padding-left:10px;text-decoration:none;}
+.menu_body a:hover{color: #000000;text-decoration:underline;}
+.menu_body ul{list-style-type:none; padding:5px 0; margin:0px 0px; }
+.menu_body ul li{padding:0px 0 0 20px; margin:0px 0px; background: url(../images/sub-list.gif) no-repeat 15px 8px; font-size:11px; height:auto; list-style-type:none; line-height:22px;}
+.menu_body ul li a{ color:#000000; text-decoration:none; font-size:11px;}
+.menu_body ul li a:hover{ color:#000000; text-decoration:underline; font-size:11px;}
+
+/* Menu Inactive Buttons */
+.inactive_btn{margin:0px;padding:5px 0px 0px 36px;line-height:22px;height:27px;color:#000;font-family:Arial;font-size:12px;cursor: pointer;position: relative;background:url(../images/gelbuttoncenter.gif) center right repeat;}
+.inactive_btn a{display:block;color:#006699;padding-left:10px;text-decoration:none;}
+.inactive_btn a:hover{color: #000000;text-decoration:underline;}
+
+/* Menu Active Buttons */
+.active_btn{margin:0px;padding:5px 0px 0px 36px;line-height:22px;height:27px;color:#000;font-family:Arial;font-size:12px;cursor: pointer;position: relative;background:url(../images/gelbuttoncenter3.gif) center right repeat;}
+.active_btn a{display:block;color:#006699;padding-left:10px;text-decoration:none;}
+.active_btn a:hover{color: #000000;text-decoration:underline;}
+
+/* Fonts for Heading of Various pages */
+.pgheading{font:Helvetica, Arial, sans-serif;color:#CC6600; text-decoration:underline;}
+
+/* Styling rules for input text boxes */
+.txtbox{background-color:#CCCCCC; color:#330000; font-family:Helvetica, Arial, sans-serif; size:1;}
+
+.smallwhitetxt{font:Helvetica, Arial, sans-serif; color:#FFFFFF; font-size:12px; background-color:#2B569B; padding:6px;}
+
+.img{height:37; width:100; background:url(../images/select1.jpg) no-repeat;border:none}
+.img:hover{height:37; width:100; background:url(../images/select2.jpg) no-repeat;border:none}
+.bluetxt{font-family:Helvetica, Arial, sans-serif; font-size:14px; color:#0000CC}

@@ -1,0 +1,142 @@
+<?php
+
+/*****************************************************************************
+*  Copyright Statement:
+*  --------------------
+*  This software is protected by Copyright and the information contained
+*  herein is confidential. The software may not be copied and the information
+*  contained herein may not be used or disclosed except with the written
+*  permission of MoMagic Technologies Pvt Ltd.
+*
+*  BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+*  THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MOMAGIC TECHNOLOGIES SOFTWARE")
+*  RECEIVED FROM MOMAGIC TECHNOLOGIES AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+*  AN "AS-IS" BASIS ONLY. MOMAGIC TECHNOLOGIES EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+*  NEITHER DOES MOMAGIC TECHNOLOGIES PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+*  SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+*  SUPPLIED WITH THE MOMAGIC TECHNOLOGIES SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+*  THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MOMAGIC TECHNOLOGIES SHALL ALSO
+*  NOT BE RESPONSIBLE FOR ANY MOMAGIC TECHNOLOGIES SOFTWARE RELEASES MADE TO BUYER'S
+*  SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+*
+*  BUYER'S SOLE AND EXCLUSIVE REMEDY AND MOMAGIC'S ENTIRE AND CUMULATIVE
+*  LIABILITY WITH RESPECT TO THE MOMAGIC TECHNOLOGIES SOFTWARE RELEASED HEREUNDER WILL BE,
+*  AT MOMAGIC'S OPTION, TO REVISE OR REPLACE THE MOMAGIC TECHNOLOGIES SOFTWARE AT ISSUE,
+*  OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+*  MOMAGIC TECHNOLOGIES FOR SUCH MOMAGIC TECHNOLOGIES SOFTWARE AT ISSUE.
+*
+*  THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+*  WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+*  LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+*  RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+*  THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+*
+*****************************************************************************/
+ 
+/*****************************************************************************
+ *
+ * Filename:
+ * ---------
+ * index.php
+ *
+ * Project:
+ * --------
+ * Thrill
+ *
+ * Description:
+ * ------------
+ * Acts as a controller for Thrill Admin Panel,re-directs the various requests coming to various functions for processing
+ *
+ * Author:
+ * -------
+ * -------
+ *
+ ****************************************************************************/
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+require("smarty/Smarty.class.php");
+include("classes/redirection.php");
+include("classes/dbTransactions.php");
+include("configs/globals.php");
+
+
+if(!isset($_REQUEST['action']) || $_REQUEST['action']==""){$action = "dashboard";}else{$action =  $_REQUEST['action'];}
+
+
+if($action=="dashboard")
+{
+//Login Verification (To-Do)
+redirection::dashboard();
+}
+
+
+//If "createtemplate" option is selected from dashboard
+else if($action=="createtemplate")
+{
+redirection::createtemplate();
+}
+
+
+//When "Save" request for saving a template
+else if($action=="savetemplate")
+{
+$tempname= $_POST['tempname'];
+$gridcount = $_POST['gridcount'];
+	for($i=1;$i<= $gridcount;$i++)
+	{
+	$rowdata[$i]=$_POST['row'.$i];
+	$coldata[$i]=$_POST['col'.$i];
+	$widthdata[$i]=$_POST['width'.$i];
+	$heightdata[$i]=$_POST['height'.$i];
+	}
+//Calling the the Save Template function from dbTransaction file	
+dbTransactions::savetemplate($tempname,$gridcount,$rowdata,$coldata,$widthdata,$heightdata);
+}
+
+
+
+//If select template request comes
+else if($action=="slct_template")
+{
+redirection::slct_template();
+}
+
+
+//If create page request comes
+else if($action=="createpage")
+{
+$tmpltselected=$_POST['tmpltsel'];
+echo $tmpltselected;
+redirection::createpage($tmpltselected);
+}
+
+
+//If a request to Get the "Grid groups" comes
+else if($action=="getgridgroups")
+{
+$ggtypes=dbTransactions::getgridgroups($_REQUEST['pgtypechosen']);
+echo $ggtypes;
+}
+
+
+//If a request to get the "Grid type" comes
+else if($action=="getgridtypes")
+{
+$gridtypes=dbTransactions::getgridtypes($_REQUEST['ggtypechosen']);
+echo $gridtypes;
+}
+
+
+
+else if($action=="showsuccess")
+{
+redirection::showsuccess();
+}
+?>
